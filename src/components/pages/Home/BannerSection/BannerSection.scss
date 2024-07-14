@@ -1,0 +1,40 @@
+/*--- Banner section ---*/
+#banner_section{
+    width: 100%;
+    min-height: 100vh;
+    padding: 120px 120px 40px;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../../../../assets/images/png/banner-section-bg.png);
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    background-size: 81% 100%;
+    &:lang(en){
+        background-position-x: left;
+    }
+    &:lang(ar){
+        background-position: right;
+    }
+    .logo_bx{
+        margin-bottom: 15px;
+        width: 300px;
+        position: absolute;
+        top: 40px;
+        inset-inline-start: calc(50% - 150px);
+        img{
+            width: 100%;
+        }
+    }
+}
+
+/** ====================
+ *  Responsive
+=======================*/
+@media screen and (max-width: 768px) {
+    #banner_section{
+        background-image: none;
+    }
+}

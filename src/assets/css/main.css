@@ -1,0 +1,119 @@
+/** ====================
+ *  Main css
+=======================*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
+
+:root {
+  --main_blue_color: #0d6efd;
+  --main_black: #212529;
+  --btn_bg: #1572D3;
+  --btn_hover_bg: #0a58ca;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f4f7f7;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 50px;
+  background-color: #c9c3c3;
+}
+
+.animate__animated {
+  --animate-duration: 1.5s;
+}
+
+body {
+  margin: 0;
+  background-color: #f5f5f5;
+}
+
+:lang(en) body {
+  font-family: "Poppins", sans-serif;
+}
+
+:lang(ar) body {
+  direction: rtl;
+  font-family: "Tajawal", sans-serif;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.loader-spinner-bx {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  position: fixed;
+  z-index: 99999;
+  background-color: #fff;
+}
+
+.container_bx {
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+.section_title{
+  position: relative;
+  padding: 8px;
+}
+.section_title::before{
+  content: '';
+  width: 0.120rem;
+  height: 20px;
+  background-color: #6D91EE;
+  position: absolute;
+  top: 0;
+  inset-inline-start: 0;
+  transform: rotate(45deg);
+}
+.section_title::after{
+  content: '';
+  width: 0.120rem;
+  height: 20px;
+  background-color: #6D91EE;
+  position: absolute;
+  top: 0;
+  inset-inline-end: 0;
+  transform: rotate(-45deg);
+}
+.section_title h3{
+  position: relative;
+  padding-bottom: 8px;
+}
+.section_title h3::before{
+  content: '';
+  width: 0.120rem;
+  height: 20px;
+  background-color: #6D91EE;
+  position: absolute;
+  bottom: 0;
+  inset-inline-start: -8px;
+  transform: rotate(135deg);
+}
+.section_title h3::after{
+  content: '';
+  width: 0.120rem;
+  height: 20px;
+  background-color: #6D91EE;
+  position: absolute;
+  bottom: 0;
+  inset-inline-end: -8px;
+  transform: rotate(-135deg);
+}
